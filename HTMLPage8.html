@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Energia Powered Form">
+    <title>FINAL TASK</title>
+    <link rel="stylesheet" href="style.css">
+    <script>alert("Welcome to Energia_Page");</script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+        }
+
+        fieldset {
+            background-color: #FFFACD;
+            padding: 10px;
+            margin-left: 20px;
+            font-family: 'Times New Roman';
+        }
+
+        legend {
+            border: 1px solid powderblue;
+            padding: 15px;
+            background-color: midnightblue;
+        }
+
+        header {
+            background-color: #FFFACD;
+            padding: 30px;
+            text-align: center;
+            font-size: 30px;
+            color: midnightblue;
+            font-family: 'Times New Roman';
+        }
+
+        .nav {
+            background-color: midnightblue;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+            ul li {
+                display: inline-block;
+                padding: 15px;
+            }
+
+        .logo {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 12px;
+            color: midnightblue;
+        }
+
+        .Footer {
+            border: 1px solid powderblue;
+            padding: 3px;
+            background-color: midnightblue;
+            margin: auto;
+            width: 30%;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <header><b>Energia Powered Form</b></header>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="https://www.facebook.com" style="color:#FFFACD">Facebook</a></li>
+            <li><a href="https://www.google.com" style="color:#FFFACD">Google</a></li>
+            <li><a href="https://www.instagram.com" style="color:#FFFACD">Instagram</a></li>
+            <li><a href="https://www.twitter.com" style="color:#FFFACD">Twitter</a></li>
+            <li><a href="https://www.youtube.com" style="color:#FFFACD">YouTube</a></li>
+            <li style="color: #FFFACD">Phone no.: 01148762666</li>
+        </ul>
+    </div>
+    <br>
+    <div class="logo">
+        <img src="energia.jpeg" width="180" height="190" alt="Energia Powered">
+        <p>( Energia Powered (Student Activity), 2011/2012 - Ain Shams )</p>
+    </div>
+    <div class="content">
+        <h2 style="color:midnightblue;font-family:'Times New Roman'">
+            <b>Register Now!</b>
+        </h2>
+
+        <br>
+        <form action="/action_page.php">
+            <fieldset>
+                <br />
+                <legend style="font-family:'Times New Roman';font-size:15px"><b style="color:white">Your Personal Information</b></legend>
+                <label style="color:midnightblue"><b>Full Name</b></label>
+                <br>
+                <input type="text" name=FullName />
+                <br />
+                <br />
+                <label style="color:midnightblue"><b>Email</b></label>
+                <br>
+                <input type="text" name=Email />
+                <br />
+                <br />
+                <label style="color:midnightblue"><b>Address</b></label>
+                <br>
+                <input type="text" name=Address />
+                <br />
+                <br />
+                <label style="color:midnightblue"><b>University</b></label>
+                <br>
+                <input type="text" name=University />
+                <br />
+                <br />
+                <label style="color:midnightblue"><b>Faculty</b></label>
+                <br>
+                <input type="text" name=Faculty />
+                <br />
+                <br />
+                <label style="color:midnightblue"><b>Department</b></label>
+                <br>
+                <input type="text" name=Department />
+                <br />
+                <br />
+                <label style="color:midnightblue"><b>Gender</b></label>
+                <br>
+                <select>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </fieldset>
+            <br>
+            <br>
+            <br>
+            <fieldset>
+                <br>
+                <legend style="font-family:'Times New Roman';font-size:15px"><b style="color:white">Your Course</b></legend>
+                <label style="color:midnightblue"><b>Choose One Course:</b></label>
+                <br>
+                <input type="radio" name="Course" value="Python">Python
+                <br>
+                <input type="radio" name="Course" value="Arduino">Arduino
+                <br>
+                <br>
+                <label style="color:midnightblue"><b>Course Date:</b></label>
+                <br>
+                <input type="text" placeholder="dd/mm/yyyy" name=Date />
+                <br>
+                <br>
+                <label style="color:midnightblue"><b>Course Time:</b></label>
+                <br>
+                <input type="radio" name="Time" value="3:00 Pm">3:00 Pm
+                <br>
+                <input type="radio" name="Time" value="6:00 Pm">6:00 Pm
+                <br>
+                <label style="color:midnightblue"><b>Other:</b></label>
+                <br>
+                <input type="text" placeholder="--:--" name=Time />
+            </fieldset>
+            <br>
+            <br>
+            <br>
+            <fieldset>
+                <legend style="font-family:'Times New Roman';font-size:15px"><b style="color:white">Your Message</b></legend>
+                <br>
+                <label style="color:midnightblue"><b>Your Comment:</b></label>
+                <br>
+                <textarea rows="6" cols="60"></textarea>
+                <br>
+                <br>
+                <input type="checkbox" />
+                <input type="button" name="Submit" value="Submit" style="color:white;background-color:lightgreen;" />
+            </fieldset>
+            <br />
+            <div class="Footer">
+                <p style="color:white;font-family:'Times New Roman'">"<b>Never stop leraning, because life never stops teaching</b>"</p>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
